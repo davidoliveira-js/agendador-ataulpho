@@ -1,0 +1,80 @@
+:root {
+  --cinza-0: rgb(255, 255, 255);
+  --cinza-100: rgb(225, 225, 230);
+  --cinza-200: rgb(50, 50, 56);
+  --cinza-300: rgb(18, 18, 20);
+  --verde-0: rgb(224, 252, 243);
+  --verde-100: rgb(0, 179, 126);
+  --verde-200: rgb(0, 154, 108);
+  --verde-300: rgb(0, 114, 80);
+  --roxo-100: rgb(102, 0, 186);
+  --roxo-200: rgb(63, 0, 115);
+  --fonte-principal: 'Roboto';
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background-color: var(--cinza-200);
+  font-family: var(--fonte-principal);
+  color: var(--cinza-300);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 4rem;
+}
+
+label {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  transition: border 0.3s;
+}
+
+select {
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: border 0.3s;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid var(--roxo-100);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem;
+}
+
+i > img {
+  width: 5rem;
+}
